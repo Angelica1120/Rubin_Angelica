@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hello, Express is working!");
 });
 
-app.use("/api/users/1", userRoutes);
+app.use("/api", userRoutes);
 
 // Start the server
 app.listen(PORT, () => {
